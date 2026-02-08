@@ -1,0 +1,76 @@
+### Read all Users
+GET http://localhost:3000/user-api/users
+
+
+###Create User
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"jaiesh",
+    "password":"Jaiesh@123",
+    "age":19
+}
+
+
+### Read all Users
+GET http://localhost:3000/user-api/users/697dbabb51d2ecb61b5be4f7
+
+
+###Put user
+PUT http://localhost:3000/user-api/users/697dbabb51d2ecb61b5be4f7
+Content-Type: application/json
+
+{
+    "username":"jaiesh",
+    "password":"Jaiesh@123",
+    "age":15
+}
+
+
+###
+DELETE http://localhost:3000/user-api/users/697dbabb51d2ecb61b5be4f7
+
+
+### Read all Products
+GET http://localhost:3000/product-api/products
+
+
+###Create Product
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "pid":1,
+    "productName":"jaiesh",
+    "price":1923
+}
+
+
+###
+GET http://localhost:3000/product-api/products/697dd168188f56d2655ecb23
+
+
+###Create Product
+PUT http://localhost:3000/product-api/products/697dd168188f56d2655ecb23
+Content-Type: application/json
+
+{
+    "pid":1,
+    "productName":"jaiesh",
+    "price":1900
+}
+
+
+###login
+POST http://localhost:3000/user-api/auth
+Content-Type: application/json
+
+{
+    "username":"jaiesh",
+    "password":"Jaiesh@123"
+}
+
+
+###
+GET http://localhost:3000/user-api/test
