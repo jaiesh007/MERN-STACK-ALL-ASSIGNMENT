@@ -1,0 +1,18 @@
+POST http://localhost:4000/users-api/users
+Content-Type:  application/json
+
+{
+    "firstName" : "Jaiesh",
+    "lastName" : "User",
+    "email" : "jaiesh@example.in",
+    "password" : "12345"
+}
+
+### Authenticate user (Login)
+POST http://localhost:4000/users-api/authenticates
+Content-Type: application/json
+
+{
+  "email": "jaiesh@example.in",
+  "password": "yourPasswordHere"
+}
