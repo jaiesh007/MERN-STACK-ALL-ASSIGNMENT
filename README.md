@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### backend development
 
 1. create git repo
@@ -20,3 +21,6 @@
 9. design REST API's for all resources
 
 10. 
+=======
+# MERN-STACK-ALL-ASSIGNMENT
+>>>>>>> e97b1d1e5503b8fbe64bbeadca56bcac52113bbd
