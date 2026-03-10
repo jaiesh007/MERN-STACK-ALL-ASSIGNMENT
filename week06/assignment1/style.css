@@ -1,0 +1,105 @@
+/* ===== Global ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #edf2f8;
+}
+
+/* ===== Navbar ===== */
+nav {
+    background: white;
+    padding: 20px 60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+nav h2 {
+    color: #333;
+}
+
+/* ===== Grid Layout ===== */
+.container {
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile h4 {
+    font-size: 15px;
+}
+
+.profile span {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* Text */
+.card h2 {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Colors */
+.purple {
+    background: #733fc8;
+    color: white;
+    grid-column: span 2;
+}
+
+.dark {
+    background: #48556a;
+    color: white;
+}
+
+.white {
+    background: white;
+    color: #333;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+.navy {
+    background: #19212e;
+    color: white;
+    grid-column: span 2;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
